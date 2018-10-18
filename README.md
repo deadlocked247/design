@@ -81,19 +81,13 @@ Here is an example of using the baseline technique with a base line height of 16
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539889676621_Artboard+Copy.png)
 
 
-Implementing Vertical Rhythm from this point on is simple. There are two rules:
-
-- Set the vertical white space between elements to a multiple of 24px.
-- Set the line-height of all text elements to a multiple of 24px.
-
-
 Example
 
 Baseline value: **16px**
 
 Line-height scale: **1.5**
 
-Scale factor: **1.618**
+Scale factor: **1.618** (golden ratio)
 
 Margin size: baseline * 2 = **24px**
 
