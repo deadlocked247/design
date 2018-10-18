@@ -1,11 +1,12 @@
-# Design guidelines
+# Flip design guidelines
 This is a guide to designing beautiful, delightful experiences at Flip.
 
 Design Tools
-- Sketch 
-- Adobe After Effects CC 2018
-- Adobe Illustrator CC 2018
-- Principle
+
+* Sketch 
+* Adobe After Effects CC 2018
+* Adobe Illustrator CC 2018
+* Principle
 
 ## Interface Design
 
@@ -30,31 +31,52 @@ Color must obide the WCAG requirements
 ### Typography
 
 The fonts we use are Avenir and Tiempos Headline.
-The general rule with fonts is if the size is below 20px, use Avenir. If it’s above 20px then use Tiempos Headline.
+The general rule with Tiempos Headline is to use it for titles and larger font sizes. 
 
 Avenir: https://www.fontshop.com/families/linotype-avenir
 Tiempos: https://klim.co.nz/retail-fonts/tiempos-headline/
 
+**Print design typography**
+
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539891246042_Artboard+Copy+3.png)
+
+
+**Web design typography**
+
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539893057431_Artboard+Copy+5.png)
+
+
+WCAG guidelines with line-height 
+
+> Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
 
 
 ### Spacing
 
-We use an 8pt grid for spacing elements. Always use multiples of 8 to define dimensions, padding, and margin of both block and inline elements. This is key since most device sizes are divisible by 8. When it comes to spacing, keep in mind the scale factor of the Golden Ratio (1.618).
+We use an 8pt grid for spacing elements. Always use multiples of 8 to define dimensions, padding, and margin of both block and inline elements. This is key since most device sizes are divisible by 8. When it comes to spacing, keep in mind the scale factor of the Golden Ratio (1.618). The spacing between elements is via relative positioning.
+
+**Why a relative spacing vs absolute spacing?**
+
+When it comes time to code up an interface, using an actual grid is irrelevant because programming languages don’t use that kind of grid structure - it’ll just get thrown away. Using a more fluid, minimal structure can be an advantage when it comes time to code your design.
 
 
-WCAG guidelines with spacing 
+We use the **box model** at Flip. The box model is a way to describe an object’s dimensions and spacing.
+
+* **Border**: the thickness of the stroke around the edges of an element.
+
+* **Padding**: the space between the bounds of an element and its child elements
+
+* **Margin**: the space between the bounds of an element and neighboring objects
 
 
-> Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
-
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539892450171_Artboard+Copy+4.png)
 
 
 ### Vertical Rhythm
 
 Vertical Rhythm is a concept that originated from print typography. In Vertical Rhythm, we try to keep vertical spaces between elements on a page consistent with each other. This means keeping it consistent with a baseline.
 
-Here is an example of using the baseline technique with a base line height of 24px
+Here is an example of using the baseline technique with a base line height of 16px
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539889676621_Artboard+Copy.png)
 
@@ -64,9 +86,53 @@ Implementing Vertical Rhythm from this point on is simple. There are two rules:
 - Set the vertical white space between elements to a multiple of 24px.
 - Set the line-height of all text elements to a multiple of 24px.
 
+
+Example
+
+Baseline value: **16px**
+
+Line-height scale: **1.5**
+
+Scale factor: **1.618**
+
+Margin size: baseline * 2 = **24px**
+
+
+Line-heights via line-height scale
+> 16 * (1.5 * 0) = **16px**
+> 
+> 16 * (1.5 * 1) = **24px**
+>
+> 16 * (1.5 * 2) = **48px**
+> 
+> 16 * (1.5 * 3) = **72px**
+
+Font-sizes via scale factor (rounded values)
+> 16 * (1.618 ^ 1) = **25.88 = ~26px**
+>
+> 16 * (1.618 ^ 2) = **41.86 = ~42px**
+> 
+> 16 * (1.618 ^ 3) = **67.772 = ~68px**
+
+Rule to combine them: 
+`lineHeight > fontSize`
+
+```
+h1 {
+	font-size: 68px;
+	line-height: 72px;
+}
+
+h2 {
+	font-size: 42px;
+	line-height: 48px;
+}
+...
+```
+
 Here the same design with margins, font sizes, and line heights
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539889799517_Artboard.png)
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539894971131_Artboard.png)
 
 
 A quick comparison
@@ -84,10 +150,10 @@ A quick comparison
 
 TBD
 
-## References
+### References
 
-Google material design https://material.io/design/
-Web Content Accessibility Guidelines (WCAG) 2.0 https://www.w3.org/TR/WCAG20/
-Making grid systems in Sketch: https://medium.com/sketch-app-sources/8-point-soft-grids-in-sketch-e8f1d5ca2cd4
-Why vertical rhythm is important https://zellwk.com/blog/why-vertical-rhythms/
+* Google material design https://material.io/design/
+* Web Content Accessibility Guidelines (WCAG) 2.0 https://www.w3.org/TR/WCAG20/
+* Making grid systems in Sketch: https://medium.com/sketch-app-sources/8-point-soft-grids-in-sketch-e8f1d5ca2cd4
+* Why vertical rhythm is important https://zellwk.com/blog/why-vertical-rhythms/
 
