@@ -1,4 +1,4 @@
-Design guidelines
+# Design guidelines
 This is a guide to designing beautiful, delightful experiences at Flip.
 
 Design Tools
@@ -6,11 +6,12 @@ Design Tools
 - Adobe After Effects CC 2018
 - Adobe Illustrator CC 2018
 - Principle
-Interface Design
+
+## Interface Design
 
 With interface design we primarily use Sketch. All values are set in px.
 
-Color
+### Color
 
 The Flip Blue is what we shade all our colors off of (#1F8EED)
 
@@ -26,7 +27,7 @@ Color must obide the WCAG requirements
 > Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
 
 
-Typography
+### Typography
 
 The fonts we use are Avenir and Tiempos Headline.
 The general rule with fonts is if the size is below 20px, use Avenir. If it’s above 20px then use Tiempos Headline.
@@ -37,8 +38,7 @@ Tiempos: https://klim.co.nz/retail-fonts/tiempos-headline/
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539891246042_Artboard+Copy+3.png)
 
 
-
-Spacing
+### Spacing
 
 We use an 8pt grid for spacing elements. Always use multiples of 8 to define dimensions, padding, and margin of both block and inline elements. This is key since most device sizes are divisible by 8. When it comes to spacing, keep in mind the scale factor of the Golden Ratio (1.618).
 
@@ -50,7 +50,7 @@ WCAG guidelines with spacing
 
 
 
-Vertical Rhythm
+### Vertical Rhythm
 
 Vertical Rhythm is a concept that originated from print typography. In Vertical Rhythm, we try to keep vertical spaces between elements on a page consistent with each other. This means keeping it consistent with a baseline.
 
@@ -76,15 +76,15 @@ A quick comparison
 
 
 
-Quick Tips
+### Quick Tips
 - The code is always the final say in design. Prioritize reducing time between ideation and programming over perfect layout in Sketch.
 
 
-Artwork and Brand Design
+## Artwork and Brand Design
 
 TBD
 
-References
+## References
 
 Google material design https://material.io/design/
 Web Content Accessibility Guidelines (WCAG) 2.0 https://www.w3.org/TR/WCAG20/
