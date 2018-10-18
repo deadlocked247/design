@@ -108,8 +108,8 @@ Font-sizes via scale factor (rounded values)
 > 
 > 16 * (1.618 ^ 3) = **67.772 = ~68px**
 
-Rule to combine them: 
-`lineHeight > fontSize`
+Rule to combine line height to a font size:
+Find the minimum line height where `lineHeight > fontSize`
 
 ```
 h1 {
