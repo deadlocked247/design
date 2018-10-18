@@ -76,12 +76,17 @@ We use the **box model** at Flip. The box model is a way to describe an objectâ€
 
 Vertical Rhythm is a concept that originated from print typography. In Vertical Rhythm, we try to keep vertical spaces between elements on a page consistent with each other. This means keeping it consistent with a baseline.
 
+A quick comparison
+
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539890014264_Artboard+Copy+2.png)
+
+
 Here is an example of using the baseline technique with a base line height of 16px
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539889676621_Artboard+Copy.png)
 
 
-Example
+#### Example of vertical rhythm
 
 Baseline value: **16px**
 
@@ -128,11 +133,40 @@ Here the same design with margins, font sizes, and line heights
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539894971131_Artboard.png)
 
+#### Formulas to calculate sizes and scale
+Here are simple formulas you can use to find:
 
-A quick comparison
+1) The adjusted line height, given a font size and line width
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539890014264_Artboard+Copy+2.png)
+![](https://pearsonified.com/wp-content/uploads/2011/12/line-height-ratio.gif)
 
+2) The adjusted line width, given a font size and line height 
+
+![](https://pearsonified.com/wp-content/uploads/2011/12/line-width.gif)
+
+#### Examples
+
+> I want to use a 16px font size in a content width of 550px
+
+We can use 1) here to find the line height.
+
+
+![](https://pearsonified.com/wp-content/uploads/2011/12/line-height-ratio-16-550.gif)
+
+1.56216 is our **line-height scale**. We can use this to find the final line-height value by multiplying it with the baseline value.
+
+
+![](https://pearsonified.com/wp-content/uploads/2011/12/line-height-16-550.gif)
+
+Our final line-height value is 125.00169 = **~25px**
+
+> I want to use a 16px font size with a line-height of 26px
+
+We can use 2) here to find the width
+
+![](https://pearsonified.com/wp-content/uploads/2011/12/line-width-16-26.gif)
+
+Width = 685.32505 = **~685px**
 
 
 
