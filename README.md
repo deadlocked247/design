@@ -1,6 +1,13 @@
 # Flip design guidelines
 This is a guide to designing beautiful, delightful experiences at Flip.
 
+## Table of Contents
+Interface Design
+
+1. [Color](#color)
+2. [Typography](#typography)
+3. [Spacing](#spacing)
+
 Design Tools
 
 * Sketch 
@@ -12,7 +19,7 @@ Design Tools
 
 With interface design we primarily use Sketch. All values are set in px.
 
-### Color
+### <a name="color"></a> Color
 
 The Flip Blue is what we shade all our colors off of (#1F8EED)
 
@@ -28,7 +35,7 @@ Color must obide the WCAG requirements
 > Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
 
 
-### Typography
+### <a name="typography"></a>Typography
 
 The fonts we use are Avenir and Tiempos Headline.
 The general rule with Tiempos Headline is to use it for titles and larger font sizes. 
@@ -51,7 +58,7 @@ WCAG guidelines with line-height
 > Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
 
 
-### Spacing
+### <a name="spacing"></a>Spacing
 
 We use an 8pt grid for spacing elements. Always use multiples of 8 to define dimensions, padding, and margin of both block and inline elements. This is key since most device sizes are divisible by 8. When it comes to spacing, keep in mind the scale factor of the Golden Ratio (1.618). The spacing between elements is via relative positioning.
 
@@ -72,7 +79,7 @@ We use the **box model** at Flip. The box model is a way to describe an objectâ€
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_6C18B39D99B66F48970B3F72EF790EFDBB1FBB87EC2D00416425292BA05D2074_1539892450171_Artboard+Copy+4.png)
 
 
-### Vertical Rhythm
+#### Vertical Rhythm
 
 Vertical Rhythm is a concept that originated from print typography. In Vertical Rhythm, we try to keep vertical spaces between elements on a page consistent with each other. This means keeping it consistent with a baseline.
 
